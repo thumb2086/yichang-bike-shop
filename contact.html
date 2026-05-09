@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 - 捷安特 義昌車行</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚴</span>
+                <span class="logo-text">義昌車行</span>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="products.html">產品目錄</a></li>
+                <li><a href="services.html">服務項目</a></li>
+                <li><a href="contact.html" class="active">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 頁面橫幅 -->
+    <section class="page-banner" style="background: linear-gradient(135deg, #00a651 0%, #007b3e 100%);">
+        <div class="container">
+            <h1>聯絡我們</h1>
+            <p>歡迎蒞臨門市參觀選購，或來電預約服務</p>
+        </div>
+    </section>
+
+    <!-- 聯絡資訊卡片 -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>門市地址</h3>
+                    <p>621 嘉義縣民雄鄉民族路57號</p>
+                    <a href="https://maps.google.com/?q=嘉義縣民雄鄉民族路57號" target="_blank" class="btn btn-outline btn-sm">
+                        <i class="fas fa-directions"></i> 開啟導航
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>聯絡電話</h3>
+                    <p>05-226-1731</p>
+                    <a href="tel:052261731" class="btn btn-primary btn-sm">
+                        <i class="fas fa-phone-alt"></i> 立即撥打
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>營業時間</h3>
+                    <p>09:00 - 20:00</p>
+                    <p class="text-muted">每週一至週日</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>追蹤我們獲取最新優惠</p>
+                    <a href="https://www.facebook.com/MinXiongJiaoTaCheDian/" target="_blank" class="btn btn-outline btn-sm">
+                        <i class="fab fa-facebook"></i> 前往粉絲頁
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地圖 -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>門市位置</h2>
+                <p>嘉義縣民雄鄉民族路57號 — 歡迎來店參觀</p>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.123456789012!2d120.424!3d23.552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzA3LjIiTiAxMjDCsDI1JzI2LjQiRQ!5e0!3m2!1szh-TW!2stw!4v1"
+                    width="100%"
+                    height="450"
+                    style="border:0; border-radius: 16px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINE CTA -->
+    <section class="line-cta" style="background: linear-gradient(135deg, #00c300 0%, #009900 100%); padding: 60px 0; text-align: center;">
+        <div class="container">
+            <i class="fab fa-line" style="font-size: 64px; color: #fff; margin-bottom: 20px;"></i>
+            <h2 style="color: #fff; font-size: 28px; margin-bottom: 15px;">加入 LINE 好友</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 18px; margin-bottom: 25px;">即時諮詢、預約服務、最新優惠訊息</p>
+            <a href="https://line.me/ti/p/~052261731" target="_blank" class="btn btn-secondary btn-lg">
+                <i class="fab fa-line"></i> 加入 LINE
+            </a>
+        </div>
+    </section>
+
+    <!-- 聯絡表單 -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>線上諮詢</h2>
+                <p>填寫表單，我們將盡快與您聯繫</p>
+            </div>
+            <div class="form-container">
+                <form onsubmit="alert('感謝您的諮詢！我們將盡快與您聯繫。'); return false;">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> 您的姓名</label>
+                        <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> 聯絡電話</label>
+                        <input type="tel" id="phone" name="phone" placeholder="請輸入電話" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> 諮詢內容</label>
+                        <textarea id="message" name="message" rows="5" placeholder="請描述您的需求，例如：我想預約維修、想了解某款車型..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> 送出諮詢
+                    </button>
+                    <p class="form-note" style="margin-top: 15px; color: #666; font-size: 14px;">
+                        <i class="fas fa-info-circle"></i> 我們會於營業時間內回電給您
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>捷安特 義昌車行</h4>
+                    <p>嘉義縣民雄鄉專業腳踏車專賣店</p>
+                    <p>提供公路車、登山車、城市通勤車、電輔車及維修服務</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="products.html">產品目錄</a></li>
+                        <li><a href="services.html">服務項目</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 嘉義縣民雄鄉民族路57號</li>
+                        <li><i class="fas fa-phone"></i> 05-226-1731</li>
+                        <li><i class="fas fa-clock"></i> 09:00-20:00</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>追蹤我們</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MinXiongJiaoTaCheDian/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 捷安特 義昌車行. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品目錄 - 捷安特 義昌車行 腳踏車和電動車專賣店</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚴</span>
+                <span class="logo-text">義昌車行</span>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="products.html" class="active">產品目錄</a></li>
+                <li><a href="services.html">服務項目</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 頁面橫幅 -->
+    <section class="page-banner" style="background: linear-gradient(135deg, #00a651 0%, #007b3e 100%);">
+        <div class="container">
+            <h1>產品目錄</h1>
+            <p>捷安特全系列車款・滿足您的每一段旅程</p>
+        </div>
+    </section>
+
+    <!-- ==================== 公路車 ==================== -->
+    <section id="road" class="product-category">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-bicycle"></i> 公路車</h2>
+                <p>輕量化車架・高速巡航・長途公路騎乘首選</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT TCR Advanced</h3>
+                        <p>碳纖維車架，Shimano Ultegra 變速系統，極致輕量化，爬坡衝刺無往不利。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT Defy Advanced</h3>
+                        <p>長途耐力型公路車，舒適幾何設計，配備碟煞系統，征服長距離挑戰。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT Propel</h3>
+                        <p>空氣動力學設計，頂級空力車架，平路衝刺王者，賽場制霸利器。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 登山車 ==================== -->
+    <section id="mtb" class="product-category">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-mountain"></i> 登山車</h2>
+                <p>越野性能・強悍避震・挑戰山林野徑</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT XTC Advanced</h3>
+                        <p>碳纖維越野登山車，輕量化硬尾車架，敏銳操控，XC 競賽級戰駒。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT Trance</h3>
+                        <p>全避震 trail 登山車，Maestro 懸吊系統，林道下坡穩定流暢。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT Talon</h3>
+                        <p>入門越野登山車，鋁合金車架，27.5 吋輪徑，輕鬆上手山林探險。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 城市通勤車 ==================== -->
+    <section id="city" class="product-category">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-city"></i> 城市通勤車</h2>
+                <p>舒適騎乘・日常代步・品味城市生活</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT Escape 3</h3>
+                        <p>平把城市健身車，輕量化 ALUXX 鋁合金車架，通勤運動兩相宜。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT FastRoad SL</h3>
+                        <p>都市健身跑車，公路車速度與平把舒適兼具，城市穿梭新選擇。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT iNeed</h3>
+                        <p>淑女城市車，低跨點設計，復古優雅外型，輕鬆享受城市漫遊。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 電輔車 ==================== -->
+    <section id="ebike" class="product-category">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-bolt"></i> 電輔車</h2>
+                <p>電力輔助・輕鬆騎乘・環保節能新生活</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT Explore E+</h3>
+                        <p>跨界電輔車，大容量電池續航力強，城市探險隨心所欲。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT FastRoad E+</h3>
+                        <p>電動跑車，運動風格搭配電動輔助，通勤騎乘輕鬆省力。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT Amiti E+</h3>
+                        <p>低跨點電輔城市車，輕鬆上下車，長輩代步、購物出遊最安心。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 配件 ==================== -->
+    <section id="accessories" class="product-category">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-helmet-safety"></i> 配件</h2>
+                <p>安全裝備・騎行配件・升級零件一應俱全</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-helmet-safety"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>GIANT 安全帽</h3>
+                        <p>輕量通風設計，通過國際安全認證，保護您的每一次騎行安全。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>車燈照明組</h3>
+                        <p>高亮度 LED 前後車燈，USB 充電設計，夜間騎乘安全必備。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>車鎖 &amp; 防盜配件</h3>
+                        <p>U 型鎖、鋼纜鎖多款選擇，讓您的愛車停放更安心。</p>
+                        <div class="product-price">歡迎洽詢</div>
+                        <a href="contact.html" class="btn btn-outline">詢問此商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 區塊 -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+        <div class="container text-center">
+            <h2>找不到您想要的車款？</h2>
+            <p>義昌車行提供多款捷安特車型，歡迎來店或來電詢問最新車款與庫存</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">聯絡我們</a>
+                <a href="tel:052261731" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> 05-226-1731</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>捷安特 義昌車行</h4>
+                    <p>嘉義縣民雄鄉專業腳踏車專賣店</p>
+                    <p>提供公路車、登山車、城市通勤車、電輔車及維修服務</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="products.html">產品目錄</a></li>
+                        <li><a href="services.html">服務項目</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>聯絡資訊</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 嘉義縣民雄鄉民族路57號</li>
+                        <li><i class="fas fa-phone"></i> 05-226-1731</li>
+                        <li><i class="fas fa-clock"></i> 09:00-20:00</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>追蹤我們</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MinXiongJiaoTaCheDian/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 捷安特 義昌車行. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
