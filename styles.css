@@ -183,6 +183,19 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
+.btn-outline-light {
+    background: transparent;
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline-light:hover {
+    background: var(--white);
+    color: var(--primary);
+    border-color: var(--white);
+    transform: translateY(-2px);
+}
+
 /* ============================================================
    NAVBAR / 導航欄
    ============================================================ */
@@ -457,6 +470,19 @@ section {
 .about-image .image-placeholder i {
     font-size: 3rem;
     color: var(--primary);
+}
+
+.about-photo {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition);
+}
+
+.about-photo:hover {
+    transform: scale(1.02);
 }
 
 .about-text h3 {
@@ -1097,6 +1123,15 @@ footer {
         scroll-margin-top: 120px;
     }
 
+    .services-grid-alt {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .service-card-body {
+        padding: 20px 16px;
+    }
+
     /* Services Grid */
     .services-grid {
         grid-template-columns: 1fr;
@@ -1212,6 +1247,81 @@ button:focus-visible,
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.7;
+}
+
+/* 首頁服務項目 - 寬版卡片 */
+.services-grid-alt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card-wide {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition);
+    border: 1px solid var(--gray-100);
+}
+
+.service-card-wide:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-light);
+}
+
+.service-card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.service-card-body {
+    padding: 24px;
+    text-align: center;
+}
+
+.service-icon-sm {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    background: rgba(0, 166, 81, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+}
+
+.service-card-wide:hover .service-icon-sm {
+    background: var(--primary-gradient);
+}
+
+.service-icon-sm i {
+    font-size: 1.4rem;
+    color: var(--primary);
+    transition: color var(--transition);
+}
+
+.service-card-wide:hover .service-icon-sm i {
+    color: var(--white);
+}
+
+.service-card-body h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.service-card-body p {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.service-card-body .btn-outline {
+    padding: 8px 20px;
+    font-size: 0.88rem;
 }
 
 /* ============================================================
