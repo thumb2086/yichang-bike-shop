@@ -526,6 +526,11 @@ section {
     align-items: center;
     justify-content: center;
     aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-image i {
@@ -538,25 +543,144 @@ section {
     transform: scale(1.2);
 }
 
+.product-card:hover .product-image {
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+}
+
+/* 產品標籤徽章 */
+.product-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--accent);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.product-badge:empty {
+    display: none;
+}
+
+/* 產品副標題與規格 */
+.product-subtitle {
+    font-size: 0.82rem !important;
+    color: var(--primary) !important;
+    font-weight: 500 !important;
+    margin-bottom: 4px !important;
+}
+
+.product-specs {
+    list-style: none;
+    margin: 12px 0 16px;
+    padding: 0;
+}
+
+.product-specs li {
+    font-size: 0.82rem;
+    color: var(--gray-500);
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-specs li i {
+    width: 16px;
+    color: var(--primary);
+    font-size: 0.78rem;
+}
+
+.product-price {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
 .product-info {
-    padding: 24px 20px;
+    padding: 20px 20px 24px;
 }
 
 .product-info h3 {
-    font-size: 1.15rem;
-    margin-bottom: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
 }
 
 .product-info p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--gray-500);
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     line-height: 1.6;
 }
 
 .product-info .btn-outline {
     padding: 8px 20px;
     font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* 分類導覽列 */
+.category-nav {
+    background: var(--white);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--gray-100);
+    position: sticky;
+    top: var(--navbar-height);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(8px);
+}
+
+.category-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 4px 0;
+}
+
+.category-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.category-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--gray-600);
+    background: var(--gray-50);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    transition: all var(--transition);
+}
+
+.category-tab:hover,
+.category-tab:active {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+/* 分類區塊標題 */
+.product-category {
+    padding: 60px 0;
+    scroll-margin-top: 140px;
+}
+
+.product-category:nth-child(even) {
+    background: var(--off-white);
 }
 
 /* ============================================================
@@ -938,8 +1062,39 @@ footer {
         font-size: 2.8rem;
     }
 
+    .product-badge {
+        top: 8px;
+        right: 8px;
+        font-size: 0.7rem;
+        padding: 3px 10px;
+    }
+
     .product-info {
-        padding: 20px 16px;
+        padding: 16px;
+    }
+
+    .product-price {
+        font-size: 1.15rem;
+    }
+
+    .product-specs li {
+        font-size: 0.78rem;
+    }
+
+    /* Category nav mobile */
+    .category-nav {
+        padding: 12px 0;
+        top: var(--navbar-height);
+    }
+
+    .category-tab {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+
+    .product-category {
+        padding: 40px 0;
+        scroll-margin-top: 120px;
     }
 
     /* Services Grid */
@@ -1057,6 +1212,39 @@ button:focus-visible,
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.7;
+}
+
+/* ============================================================
+   CTA SECTION / 行動呼籲區塊
+   ============================================================ */
+.cta-section {
+    padding: 80px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.cta-section h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.cta-section p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* ============================================================
