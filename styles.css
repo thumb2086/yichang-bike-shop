@@ -1828,3 +1828,126 @@ button:focus-visible,
         gap: 2px;
     }
 }
+
+/* ============================================================
+   首頁「關於」門市資訊牌（取代佔位虛線卡）
+   ============================================================ */
+.store-panel {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 440px;
+    padding: 40px 34px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(155deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.store-panel::before {
+    content: "🚴";
+    position: absolute;
+    right: -36px;
+    bottom: -52px;
+    font-size: 12rem;
+    line-height: 1;
+    opacity: 0.12;
+    transform: rotate(-12deg);
+    pointer-events: none;
+}
+
+.store-badge {
+    align-self: flex-start;
+    padding: 6px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.16);
+    font-size: 0.84rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.store-panel h3 {
+    margin: 6px 0 0;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 900;
+    color: var(--white);
+}
+
+.store-panel .store-sub {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.95rem;
+}
+
+.store-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 6px;
+}
+
+.store-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 0.96rem;
+    line-height: 1.6;
+}
+
+.store-row i {
+    width: 20px;
+    margin-top: 5px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.store-row small {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.82rem;
+}
+
+.store-row a {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.store-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.store-panel .btn-outline {
+    border-color: rgba(255, 255, 255, 0.75);
+    color: var(--white);
+    transition: background var(--transition), color var(--transition);
+}
+
+.store-panel .btn-outline:hover,
+.store-panel .btn-outline:focus-visible {
+    background: var(--white);
+    color: var(--primary-dark);
+}
+
+.store-note {
+    margin: auto 0 0;
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .store-panel {
+        min-height: 0;
+        padding: 30px 24px;
+    }
+
+    .store-panel::before {
+        font-size: 8rem;
+    }
+}
