@@ -139,3 +139,38 @@ document.addEventListener('DOMContentLoaded', () => {
 // ------- 滾動監聽 -------
 
 window.addEventListener('scroll', handleNavbarScroll);
+
+// ------- 5. 聯絡表單（靜態站：複製內容並導向 LINE） -------
+
+function submitInquiry(event) {
+  event.preventDefault();
+  const form = event.target;
+  const name = (form.querySelector('#name') || {}).value || '';
+  const phone = (form.querySelector('#phone') || {}).value || '';
+  const message = (form.querySelector('#message') || {}).value || '';
+  const text = `【義昌車行線上諮詢】\n姓名：${name}\n電話：${phone}\n需求：${message}`;
+
+  const done = () => {
+    window.open('https://line.me/ti/p/~052261731', '_blank', 'noopener');
+    alert('已複製您的諮詢內容！請在 LINE 對話框貼上並送出，我們將盡快回覆。\n\n急件歡迎直接來電 05-226-1731。');
+  };
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+  } else {
+    fallbackCopy(text, done);
+  }
+  return false;
+}
+
+function fallbackCopy(text, done) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); } catch (e) { /* 忽略 */ }
+  document.body.removeChild(ta);
+  done();
+}
