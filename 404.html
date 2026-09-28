@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找不到頁面 - 捷安特 義昌車行</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .nf-wrap {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 24px;
+            background: linear-gradient(135deg, #00a651 0%, #007b3e 100%);
+            color: #fff;
+        }
+        .nf-code { font-size: clamp(4rem, 12vw, 8rem); font-weight: 900; line-height: 1; opacity: 0.9; }
+        .nf-wrap h1 { font-size: clamp(1.4rem, 4vw, 2rem); margin: 16px 0 12px; }
+        .nf-wrap p { color: rgba(255,255,255,0.85); margin-bottom: 28px; line-height: 1.8; }
+        .nf-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .nf-wrap .btn { border-color: #fff; color: #fff; }
+        .nf-wrap .btn-primary { background: #fff; color: var(--primary); border-color: #fff; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚴</span>
+                <span class="logo-text">義昌車行</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="products.html">產品目錄</a></li>
+                <li><a href="services.html">服務項目</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="nf-wrap">
+        <div>
+            <div class="nf-code">404</div>
+            <h1>您找的頁面不存在</h1>
+            <p>連結可能已失效或輸入錯誤。<br>歡迎回到首頁繼續瀏覽，或直接聯絡我們。</p>
+            <div class="nf-btns">
+                <a href="index.html" class="btn btn-primary"><i class="fas fa-home"></i> 回到首頁</a>
+                <a href="products.html" class="btn btn-outline"><i class="fas fa-bicycle"></i> 產品目錄</a>
+                <a href="contact.html" class="btn btn-outline"><i class="fas fa-phone-alt"></i> 聯絡我們</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="padding: 24px 0;">
+                <p>&copy; 2026 捷安特 義昌車行 · 嘉義縣民雄鄉西安村民族路57號 · 05-226-1731</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

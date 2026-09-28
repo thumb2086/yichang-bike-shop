@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yichang-bike-shop.vercel.app/sitemap.xml
