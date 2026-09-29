@@ -31,10 +31,9 @@
 | `road-3.jpg` | [tw/bikes-propel-advanced-sl-2027](https://www.giant-bicycles.com/tw/bikes-propel-advanced-sl-2027) |
 | `road-4.jpg` | [tw/contend-1](https://www.giant-bicycles.com/tw/contend-1) |
 
-## 2. 專案既有素材（repo 內原有）
+## 2. 店家提供
 
-- `images/riding-forest.jpg`
-- `images/bike-studio-white.jpg`
+- `images/shop-photo.jpg` — 義昌車行門市實拍（店家自 Facebook 粉絲頁提供，2026-09）
 
 ## 3. 說明
 
@@ -42,3 +41,4 @@
 - 停產車款（XTC Advanced、Trance Advanced、Stance、Escape 3、FastRoad SL、iNeed、
   Liv Alight、Amiti E+、Escape E+、Expressway、Halfway 等）已自目錄移除，改列現行車款。
 - 先前使用之 Wikimedia Commons 照片已全數移除，不再需要授權列。
+- `images/riding-forest.jpg` — repo 原有騎乘示意圖（Hero 第 2 張）

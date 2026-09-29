@@ -16,7 +16,7 @@
 | `404.html` | 找不到頁面時的提示頁（Vercel 與 GitHub Pages 皆自動取用） |
 | `styles.css` | 全站樣式（含響應式，支援手機選單） |
 | `script.js` | 共用腳本：手機選單、Hero 輪播、導航欄捲動、平滑捲動、諮詢表單 |
-| `images/` | 騎乘示意圖（6 張，均已核對內容與分類相符；非本店實拍） |
+| `images/` | 門市實拍 shop-photo ＋ 捷安特官方型錄圖（來源見 IMAGE_CREDITS.md） |
 | `robots.txt` / `sitemap.xml` | 搜尋引擎索引設定 |
 | `vercel.json` | Vercel 部署設定 |
 | `tools/check-links.mjs` | 站內連結檢查工具 |

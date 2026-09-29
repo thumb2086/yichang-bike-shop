@@ -2281,3 +2281,13 @@ button:focus-visible,
     .contact-layout, .form-layout { grid-template-columns: 1fr; }
     .line-card { flex-direction: column; align-items: flex-start; }
 }
+
+/* 門市照片說明條 */
+.photo-caption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--gray-500, #888);
+}
