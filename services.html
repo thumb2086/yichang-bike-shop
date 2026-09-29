@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>服務項目 - 捷安特 義昌車行</title>
+    <meta name="description" content="義昌車行服務項目：專業維修保養、二手車買賣、改裝升級。嘉義民雄民族路57號，05-226-1731。">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -32,153 +33,106 @@
     <section class="page-banner" style="background: linear-gradient(135deg, #00a651 0%, #007b3e 100%);">
         <div class="container">
             <h1>服務項目</h1>
-            <p>專業技術 貼心服務・在地車友的信賴</p>
+            <p>專業技術・貼心服務・在地車友的信賴</p>
         </div>
     </section>
 
-    <!-- 維修保養 -->
-    <section id="repair" class="service-detail">
+    <!-- 服務清單 -->
+    <section class="svc-list">
         <div class="container">
-            <div class="service-detail-card">
-                <div class="service-detail-icon">
-                    <i class="fas fa-wrench"></i>
-                </div>
-                <div class="service-detail-content">
-                    <h2>專業維修保養</h2>
+
+            <article class="svc-card" id="repair">
+                <aside class="svc-side">
+                    <span class="svc-num">01</span>
+                    <span class="svc-icon"><i class="fas fa-wrench"></i></span>
+                    <a href="tel:052261731" class="btn btn-svc"><i class="fas fa-phone-alt"></i> 立即預約</a>
+                </aside>
+                <div class="svc-body">
+                    <div class="svc-head">
+                        <h2>專業維修保養</h2>
+                        <span class="svc-price">依車況估價・歡迎來店洽詢</span>
+                    </div>
                     <p>義昌車行擁有經驗豐富的專業技師團隊，為您的愛車提供全方位的維修保養服務。無論是日常檢查、定期保養，還是故障排除，我們都能為您解決。</p>
-                    <div class="service-items">
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>定期保養檢查（鏈條清潔、變速調整、煞車檢查）</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>輪胎更換與補胎</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>煞車系統維修（碟煞、V煞）</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>變速系統調整與維修</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>輪組校正與維修</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>電輔車電池檢測與維修</span>
-                        </div>
+                    <ul class="svc-items">
+                        <li><i class="fas fa-check-circle"></i> 定期保養檢查（鏈條清潔、變速調整、煞車檢查）</li>
+                        <li><i class="fas fa-check-circle"></i> 輪胎更換與補胎</li>
+                        <li><i class="fas fa-check-circle"></i> 煞車系統維修（碟煞、V煞）</li>
+                        <li><i class="fas fa-check-circle"></i> 變速系統調整與維修</li>
+                        <li><i class="fas fa-check-circle"></i> 輪組校正與維修</li>
+                        <li><i class="fas fa-check-circle"></i> 電輔車電池檢測與維修</li>
+                    </ul>
+                    <div class="svc-actions">
+                        <a href="contact.html" class="btn btn-primary">線上預約</a>
+                        <a href="tel:052261731" class="btn btn-outline">05-226-1731</a>
                     </div>
-                    <div class="service-price">
-                        <span class="price-label">價格：</span>
-                        <span class="price-value">依車況估價，歡迎來店洽詢</span>
-                    </div>
-                    <a href="tel:052261731" class="btn btn-primary">
-                        <i class="fas fa-phone-alt"></i> 立即預約 05-226-1731
-                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
+            </article>
 
-    <!-- 二手車買賣 -->
-    <section id="trade" class="service-detail" style="background: #f8f9fa;">
-        <div class="container">
-            <div class="service-detail-card">
-                <div class="service-detail-icon">
-                    <i class="fas fa-exchange-alt"></i>
-                </div>
-                <div class="service-detail-content">
-                    <h2>二手車買賣</h2>
+            <article class="svc-card" id="trade">
+                <aside class="svc-side">
+                    <span class="svc-num">02</span>
+                    <span class="svc-icon"><i class="fas fa-exchange-alt"></i></span>
+                    <a href="tel:052261731" class="btn btn-svc"><i class="fas fa-phone-alt"></i> 免費估價</a>
+                </aside>
+                <div class="svc-body">
+                    <div class="svc-head">
+                        <h2>二手車買賣</h2>
+                        <span class="svc-price">二手車價格範圍 NT$3,000 - NT$20,000（依車況而定）</span>
+                    </div>
                     <p>提供二手腳踏車買賣服務，無論您是想出售舊車換新車，還是尋找高 CP 值的二手車，我們都能為您服務。每台二手車都經過專業技師檢驗整理，品質有保證。</p>
-                    <div class="service-items">
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>二手車收購 — 合理估價，舊車換新車</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>二手車販售 — 整理檢測，品質保證</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>到店免費估價</span>
-                        </div>
+                    <ul class="svc-items">
+                        <li><i class="fas fa-check-circle"></i> 二手車收購 — 合理估價，舊車換新車</li>
+                        <li><i class="fas fa-check-circle"></i> 二手車販售 — 整理檢測，品質保證</li>
+                        <li><i class="fas fa-check-circle"></i> 到店免費估價</li>
+                    </ul>
+                    <div class="svc-actions">
+                        <a href="contact.html" class="btn btn-primary">線上諮詢</a>
+                        <a href="tel:052261731" class="btn btn-outline">05-226-1731</a>
                     </div>
-                    <div class="service-price">
-                        <span class="price-label">二手車價格範圍：</span>
-                        <span class="price-value">NT$ 3,000 - NT$ 20,000（依車況而定）</span>
-                    </div>
-                    <a href="tel:052261731" class="btn btn-primary">
-                        <i class="fas fa-phone-alt"></i> 立即預約 05-226-1731
-                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
+            </article>
 
-    <!-- 改裝升級 -->
-    <section id="upgrade" class="service-detail">
-        <div class="container">
-            <div class="service-detail-card">
-                <div class="service-detail-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <div class="service-detail-content">
-                    <h2>改裝升級</h2>
+            <article class="svc-card" id="upgrade">
+                <aside class="svc-side">
+                    <span class="svc-num">03</span>
+                    <span class="svc-icon"><i class="fas fa-cogs"></i></span>
+                    <a href="contact.html" class="btn btn-svc"><i class="fas fa-comments"></i> 討論需求</a>
+                </aside>
+                <div class="svc-body">
+                    <div class="svc-head">
+                        <h2>改裝升級</h2>
+                        <span class="svc-price">依改裝項目估價・歡迎來店討論</span>
+                    </div>
                     <p>想讓您的愛車更上一層樓？我們提供多樣的改裝升級服務，從零件升級到客製化改裝，讓您的騎乘體驗更加完美。</p>
-                    <div class="service-items">
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>變速系統升級（Shimano / SRAM 各等級）</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>輪組升級 — 輕量化、空力輪組</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>煞車系統升級（碟煞升級）</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>座墊、把手、踏板更換</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>電輔車動力升級</span>
-                        </div>
-                        <div class="service-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>配件加裝（貨架、擋泥板、車燈）</span>
-                        </div>
+                    <ul class="svc-items">
+                        <li><i class="fas fa-check-circle"></i> 變速系統升級（Shimano / SRAM 各等級）</li>
+                        <li><i class="fas fa-check-circle"></i> 輪組升級 — 輕量化、空力輪組</li>
+                        <li><i class="fas fa-check-circle"></i> 煞車系統升級（碟煞升級）</li>
+                        <li><i class="fas fa-check-circle"></i> 座墊、把手、踏板更換</li>
+                        <li><i class="fas fa-check-circle"></i> 電輔車動力升級</li>
+                        <li><i class="fas fa-check-circle"></i> 配件加裝（貨架、擋泥板、車燈）</li>
+                    </ul>
+                    <div class="svc-actions">
+                        <a href="contact.html" class="btn btn-primary">線上諮詢</a>
+                        <a href="tel:052261731" class="btn btn-outline">05-226-1731</a>
                     </div>
-                    <div class="service-price">
-                        <span class="price-label">價格：</span>
-                        <span class="price-value">依改裝項目估價，歡迎來店討論需求</span>
-                    </div>
-                    <a href="tel:052261731" class="btn btn-primary">
-                        <i class="fas fa-phone-alt"></i> 立即預約 05-226-1731
-                    </a>
                 </div>
-            </div>
+            </article>
+
         </div>
     </section>
 
     <!-- CTA -->
     <section class="cta-section" style="background: linear-gradient(135deg, #00a651 0%, #007b3e 100%);">
-        <div class="container">
-            <h2>有任何維修或改裝需求？</h2>
-            <p>歡迎來店或來電諮詢，我們將為您提供最專業的建議與服務</p>
-            <a href="tel:052261731" class="btn btn-secondary btn-lg">
-                <i class="fas fa-phone-alt"></i> 來電預約 05-226-1731
-            </a>
-            <a href="contact.html" class="btn btn-outline btn-lg" style="margin-left: 15px; border-color: #fff; color: #fff;">
-                <i class="fas fa-map-marker-alt"></i> 查看地圖
-            </a>
+        <div class="container cta-inner">
+            <div class="cta-copy">
+                <h2>有任何維修或改裝需求？</h2>
+                <p>歡迎來店或來電諮詢，我們將為您提供最專業的建議與服務</p>
+            </div>
+            <div class="cta-actions">
+                <a href="tel:052261731" class="btn btn-cta-light"><i class="fas fa-phone-alt"></i> 05-226-1731</a>
+                <a href="contact.html" class="btn btn-cta-outline"><i class="fas fa-map-marker-alt"></i> 查看地圖</a>
+            </div>
         </div>
     </section>
 
@@ -188,7 +142,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>捷安特 義昌車行</h4>
-                    <p>嘉義縣民雄鄉專業腳踏車專賣店</p>
+                    <p>嘉義民雄鄉專業腳踏車專賣店</p>
                     <p>提供公路車、登山車、城市通勤車、電輔車及維修服務</p>
                 </div>
                 <div class="footer-section">

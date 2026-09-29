@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>聯絡我們 - 捷安特 義昌車行</title>
+    <meta name="description" content="聯絡捷安特義昌車行：621 嘉義縣民雄鄉西安村民族路57號，05-226-1731，09:00-20:00。提供地圖導航、LINE 諮詢與線上表單。">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -36,83 +37,97 @@
         </div>
     </section>
 
-    <!-- 聯絡資訊卡片 -->
-    <section class="contact-info">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>門市地址</h3>
-                    <p>621 嘉義縣民雄鄉西安村民族路57號</p>
-                    <a href="https://maps.google.com/?q=嘉義縣民雄鄉民族路57號" target="_blank" class="btn btn-outline btn-sm">
-                        <i class="fas fa-directions"></i> 開啟導航
-                    </a>
+    <!-- 聯絡資訊 + 地圖 -->
+    <section class="contact-main">
+        <div class="container contact-layout">
+
+            <div class="contact-pane">
+                <div class="pane-head">
+                    <h2>門市資訊</h2>
+                    <p>民雄火車站前 300 公尺・民雄國小旁</p>
                 </div>
-                <div class="contact-card">
-                    <i class="fas fa-phone-alt"></i>
-                    <h3>聯絡電話</h3>
-                    <p>05-226-1731</p>
-                    <a href="tel:052261731" class="btn btn-primary btn-sm">
-                        <i class="fas fa-phone-alt"></i> 立即撥打
-                    </a>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>營業時間</h3>
-                    <p>09:00 - 20:00</p>
-                    <p class="text-muted">週一至週日・建議來電確認</p>
-                </div>
-                <div class="contact-card">
-                    <i class="fab fa-facebook"></i>
-                    <h3>Facebook</h3>
-                    <p>追蹤我們獲取最新優惠</p>
-                    <a href="https://www.facebook.com/MinXiongJiaoTaCheDian/" target="_blank" class="btn btn-outline btn-sm">
-                        <i class="fab fa-facebook"></i> 前往粉絲頁
-                    </a>
+                <ul class="contact-list">
+                    <li>
+                        <span class="cl-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <div class="cl-body">
+                            <strong>門市地址</strong>
+                            <span>621 嘉義縣民雄鄉西安村民族路57號</span>
+                        </div>
+                        <a href="https://maps.google.com/?q=%E5%98%89%E7%BE%A9%E7%B8%A3%E6%B0%91%E9%9B%84%E9%84%89%E8%A5%BF%E5%AE%89%E6%9D%91%E6%B0%91%E6%97%8F%E8%B7%AF57%E8%99%9F" target="_blank" class="btn btn-outline btn-sm">導航</a>
+                    </li>
+                    <li>
+                        <span class="cl-icon"><i class="fas fa-phone-alt"></i></span>
+                        <div class="cl-body">
+                            <strong>聯絡電話</strong>
+                            <span>05-226-1731（歡迎來電詢問庫存與價格）</span>
+                        </div>
+                        <a href="tel:052261731" class="btn btn-primary btn-sm">撥打</a>
+                    </li>
+                    <li>
+                        <span class="cl-icon"><i class="fas fa-clock"></i></span>
+                        <div class="cl-body">
+                            <strong>營業時間</strong>
+                            <span>09:00 - 20:00・週一至週日（建議來電確認）</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="cl-icon"><i class="fab fa-facebook"></i></span>
+                        <div class="cl-body">
+                            <strong>Facebook</strong>
+                            <span>最新車款與活動資訊即時更新</span>
+                        </div>
+                        <a href="https://www.facebook.com/MinXiongJiaoTaCheDian/" target="_blank" class="btn btn-outline btn-sm">前往</a>
+                    </li>
+                </ul>
+
+                <div class="line-card">
+                    <div class="line-copy">
+                        <i class="fab fa-line"></i>
+                        <div>
+                            <strong>加入 LINE 好友</strong>
+                            <span>即時諮詢、預約服務、最新優惠訊息</span>
+                        </div>
+                    </div>
+                    <a href="https://line.me/ti/p/~052261731" target="_blank" class="btn btn-line">加入 LINE</a>
                 </div>
             </div>
+
+            <div class="contact-pane">
+                <div class="pane-head">
+                    <h2>門市位置</h2>
+                    <p>點擊地圖可開啟 Google Maps 導航</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps?q=%E5%98%89%E7%BE%A9%E7%B8%A3%E6%B0%91%E9%9B%84%E9%84%89%E8%A5%BF%E5%AE%89%E6%9D%91%E6%B0%91%E6%97%8F%E8%B7%AF57%E8%99%9F&output=embed"
+                        width="100%"
+                        height="480"
+                        style="border:0; border-radius: 16px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <a href="https://maps.google.com/?q=%E5%98%89%E7%BE%A9%E7%B8%A3%E6%B0%91%E9%9B%84%E9%84%89%E8%A5%BF%E5%AE%89%E6%9D%91%E6%B0%91%E6%97%8F%E8%B7%AF57%E8%99%9F" target="_blank" class="btn btn-outline map-btn">
+                    <i class="fas fa-diamond-turn-right"></i> 在 Google Maps 開啟路線
+                </a>
+            </div>
+
         </div>
     </section>
 
-    <!-- 地圖 -->
-    <section class="map-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>門市位置</h2>
-                <p>嘉義縣民雄鄉西安村民族路57號 — 歡迎來店參觀</p>
-            </div>
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps?q=%E5%98%89%E7%BE%A9%E7%B8%A3%E6%B0%91%E9%9B%84%E9%84%89%E6%B0%91%E6%97%8F%E8%B7%AF57%E8%99%9F&output=embed"
-                    width="100%"
-                    height="450"
-                    style="border:0; border-radius: 16px;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- LINE CTA -->
-    <section class="line-cta" style="background: linear-gradient(135deg, #00c300 0%, #009900 100%); padding: 60px 0; text-align: center;">
-        <div class="container">
-            <i class="fab fa-line" style="font-size: 64px; color: #fff; margin-bottom: 20px;"></i>
-            <h2 style="color: #fff; font-size: 28px; margin-bottom: 15px;">加入 LINE 好友</h2>
-            <p style="color: rgba(255,255,255,0.9); font-size: 18px; margin-bottom: 25px;">即時諮詢、預約服務、最新優惠訊息</p>
-            <a href="https://line.me/ti/p/~052261731" target="_blank" class="btn btn-secondary btn-lg">
-                <i class="fab fa-line"></i> 加入 LINE
-            </a>
-        </div>
-    </section>
-
-    <!-- 聯絡表單 -->
+    <!-- 線上諮詢表單 -->
     <section class="contact-form-section">
-        <div class="container">
-            <div class="section-header">
+        <div class="container form-layout">
+            <div class="form-intro">
                 <h2>線上諮詢</h2>
-                <p>填寫表單，我們將盡快與您聯繫</p>
+                <p>填寫表單，我們將於營業時間內與您聯繫。急件歡迎直接來電或加入 LINE。</p>
+                <ul class="form-notes">
+                    <li><i class="fas fa-phone-alt"></i> 急件請撥 <a href="tel:052261731">05-226-1731</a></li>
+                    <li><i class="fab fa-line"></i> 或加入 <a href="https://line.me/ti/p/~052261731" target="_blank">LINE 好友</a> 即時詢問</li>
+                    <li><i class="fas fa-clock"></i> 營業時間 09:00 - 20:00・週一至週日</li>
+                    <li><i class="fas fa-bicycle"></i> 可預約維修保養、二手車估價、改裝升級</li>
+                </ul>
             </div>
             <div class="form-container">
                 <form onsubmit="return submitInquiry(event)">
@@ -132,7 +147,7 @@
                         <i class="fas fa-paper-plane"></i> 送出諮詢
                     </button>
                     <p class="form-note" style="margin-top: 15px; color: #666; font-size: 14px;">
-                        <i class="fas fa-info-circle"></i> 送出後會將內容複製到剪貼簿並帶您到 LINE，貼上傳送即可；亦可直接來電 05-226-1731
+                        <i class="fas fa-info-circle"></i> 送出後會將內容複製到剪貼簿並帶您到 LINE，貼上傳送即可
                     </p>
                 </form>
             </div>

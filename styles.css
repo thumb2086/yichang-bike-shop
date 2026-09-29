@@ -1951,3 +1951,333 @@ button:focus-visible,
         font-size: 8rem;
     }
 }
+/* ============================================================
+   服務項目頁：svc-card（側欄編號 + 內容）
+   ============================================================ */
+.svc-list {
+    padding: 72px 0 40px;
+    background: var(--gray-50, #f8f9fa);
+}
+
+.svc-card {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 0;
+    margin-bottom: 32px;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid #eef0f2;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm, 0 2px 10px rgba(0,0,0,0.05));
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.svc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.svc-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 34px 18px;
+    background: linear-gradient(160deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.svc-num {
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    opacity: 0.35;
+}
+
+.svc-icon i {
+    font-size: 2.1rem;
+}
+
+.btn-svc {
+    padding: 9px 16px;
+    background: rgba(255,255,255,0.92);
+    color: var(--primary-dark);
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+}
+
+.btn-svc:hover {
+    background: var(--white);
+    transform: translateY(-2px);
+}
+
+.svc-body {
+    padding: 30px 34px;
+}
+
+.svc-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.svc-head h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+}
+
+.svc-price {
+    padding: 5px 14px;
+    background: rgba(0,166,81,0.08);
+    border: 1px dashed rgba(0,166,81,0.4);
+    border-radius: var(--radius-full);
+    color: var(--primary-dark);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.svc-body > p {
+    color: var(--gray-600);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.svc-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.svc-items li {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    font-size: 0.93rem;
+    color: var(--gray-700);
+    line-height: 1.6;
+}
+
+.svc-items li i {
+    margin-top: 4px;
+    color: var(--primary);
+}
+
+.svc-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* CTA 內欄 */
+.cta-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    text-align: left;
+}
+
+.cta-copy h2 { color: #fff; margin-bottom: 8px; }
+.cta-copy p { color: rgba(255,255,255,0.9); margin-bottom: 0; }
+
+.cta-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+
+.btn-cta-light {
+    background: #fff;
+    color: var(--primary-dark);
+    border-color: #fff;
+    font-weight: 700;
+    padding: 14px 26px;
+}
+
+.btn-cta-outline {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.8);
+    padding: 14px 26px;
+}
+
+.btn-cta-outline:hover { background: #fff; color: var(--primary-dark); }
+
+@media (max-width: 868px) {
+    .svc-card { grid-template-columns: 1fr; }
+    .svc-side { flex-direction: row; justify-content: space-between; padding: 18px 22px; }
+    .svc-num { font-size: 1.8rem; }
+    .svc-body { padding: 24px 22px; }
+    .svc-items { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   聯絡我們頁：兩欄（資訊清單 + 地圖）／表單配說明
+   ============================================================ */
+.contact-main { padding: 64px 0; }
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 36px;
+    align-items: start;
+}
+
+.pane-head {
+    margin-bottom: 18px;
+}
+
+.pane-head h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+    position: relative;
+    padding-left: 14px;
+}
+
+.pane-head h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 5px;
+    border-radius: 4px;
+    background: var(--primary);
+}
+
+.pane-head p {
+    margin: 6px 0 0;
+    padding-left: 14px;
+    color: var(--gray-500, #888);
+    font-size: 0.92rem;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0 0 22px;
+    padding: 0;
+    background: var(--white);
+    border: 1px solid #eef0f2;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm, 0 2px 10px rgba(0,0,0,0.05));
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.contact-list li:last-child { border-bottom: none; }
+
+.cl-icon {
+    flex: 0 0 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(0,166,81,0.08);
+    color: var(--primary);
+    font-size: 1.05rem;
+}
+
+.cl-body { flex: 1; min-width: 0; }
+.cl-body strong { display: block; font-size: 0.95rem; color: var(--gray-800, #333); }
+.cl-body span { font-size: 0.9rem; color: var(--gray-600); line-height: 1.6; }
+
+.line-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 20px 22px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, #00c300 0%, #009900 100%);
+    color: #fff;
+    box-shadow: var(--shadow-sm);
+}
+
+.line-copy { display: flex; align-items: center; gap: 14px; }
+.line-copy > i { font-size: 2.2rem; }
+.line-copy strong { display: block; font-size: 1.02rem; }
+.line-copy span { font-size: 0.86rem; opacity: 0.92; }
+
+.btn-line {
+    background: #fff;
+    color: #06a506;
+    border: none;
+    font-weight: 700;
+    padding: 11px 22px;
+}
+
+.map-btn { margin-top: 14px; width: 100%; justify-content: center; }
+
+/* 表單區 */
+.contact-form-section {
+    padding: 56px 0 72px;
+    background: var(--gray-50, #f8f9fa);
+}
+
+.form-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.form-intro h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.form-intro > p {
+    color: var(--gray-600);
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.form-notes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-notes li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.93rem;
+    color: var(--gray-700);
+    background: #fff;
+    border: 1px solid #eef0f2;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.form-notes li i { color: var(--primary); width: 18px; text-align: center; }
+.form-notes li a { color: var(--primary-dark); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 868px) {
+    .contact-layout, .form-layout { grid-template-columns: 1fr; }
+    .line-card { flex-direction: column; align-items: flex-start; }
+}
