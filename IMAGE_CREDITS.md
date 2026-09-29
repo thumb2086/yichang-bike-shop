@@ -34,6 +34,8 @@
 ## 2. 店家提供
 
 - `images/shop-photo.jpg` — 義昌車行門市實拍（店家自 Facebook 粉絲頁提供，2026-09）
+- `images/shop-front-sign.jpg` — 門市招牌實拍（粉絲頁「大頭貼照」相簿，2026-09 抓取）
+- `images/damao-logo.jpg` — 打貓車隊 logo（粉絲頁相簿，民雄舊稱打貓）
 
 ## 3. 說明
 
