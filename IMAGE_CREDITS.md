@@ -36,7 +36,7 @@
 ### 1b. 官網教學／圖庫照（服務視覺與 Hero）
 | 檔案 | 來源頁 |
 | --- | --- |
-| `hero-repair-scene.jpg` | tw/lubes-cleaners（上油保養教學照 → Hero 維修張） |
+| \hero-repair-scene.jpg\ | PROFESSIONAL TORQUE WRENCH @ACTION（原生 1440x600 寬幅實拍） | Giant 官網 | giant-bicycles.com/tw/mini-tools |
 | `svc-repair.jpg` | tw/adjusting-your-saddle（調整教學照 → 維修保養卡） |
 | `svc-upgrade.jpg` | global/showcase/tcr-advanced（TCR 圖庫照 → 改裝升級卡） |
 
