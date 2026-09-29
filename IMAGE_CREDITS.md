@@ -35,6 +35,7 @@
 
 - `images/shop-photo.jpg` / `images/shop-detail.jpg` — 義昌車行門市實拍（店家提供，detail 為招牌＋店門口近景裁切，2026-09）
 - `images/damao-logo.jpg` — 打貓車隊 logo（粉絲頁相簿，民雄舊稱打貓）
+- `images/svc-center.jpg` — 中正大學特約店售後服務處實拍（粉絲頁照片，Hero 維修張與服務示意）
 
 ## 3. 說明
 
