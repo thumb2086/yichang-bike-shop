@@ -2310,3 +2310,8 @@ button:focus-visible,
     border-radius: 10px;
     border: 1px solid #eef0f2;
 }
+
+/* 服務側欄照片上的文字可讀性 */
+.svc-num, .svc-icon i {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
